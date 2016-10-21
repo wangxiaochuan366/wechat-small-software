@@ -12,6 +12,7 @@ Page({
       url: '../logs/logs'
     })
   },
+  //页面加载时
   onLoad: function () {
     console.log('onLoad')
     var that = this
@@ -22,5 +23,21 @@ Page({
         userInfo:userInfo
       })
     })
+  }
+  //页面渲染完成时
+  onReady: function(){
+
+  }
+  //页面显示时
+  onShow: function(){
+
+  }
+  //页面隐藏时
+  onHide: function(){
+
+  }
+  //页面卸载时
+  onUnload: function(){
+
   }
 })
