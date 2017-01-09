@@ -7,6 +7,29 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"green",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+      "list":[{
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"../images/1.png",
+        "selectedIconPath":"../images/1-active.png"
+        },{
+          "pagePath":"pages/logs/logs",
+          "text":"日志",
+          "iconPath":"../images/2.png",
+          "selectedIconPath":"../images/2-active.png"
+       }],
+       "position":"bottom",
+       "selectedColor":"blue",
+       "borderStyle":"black"
+  },
+  "networkTimeout":{
+      "request":10000,
+      "downloadFile":10000
+  },
+  "debug":true
 }

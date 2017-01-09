@@ -7,4 +7,5 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <button type="primary" style="width:100%" bindtap="click" >点击我</button>
 </view>

@@ -12,6 +12,27 @@ Page({
       url: '../logs/logs'
     })
   },
+  click:function(){
+      var that = this
+     that.setData({
+        motto:'点击后的文字'
+      })
+  },
+  //测试分享
+  onShareAppMessage: function () {
+    return {
+      title: '测试分享标题',
+      desc: '测试分享描述',
+      path: '/page/user?id=12'
+    }
+  },
+  //下拉刷新
+  onPullDownRefresh: function(){
+    var that = this
+     that.setData({
+        motto:'刷新之后的文字'
+      })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this
