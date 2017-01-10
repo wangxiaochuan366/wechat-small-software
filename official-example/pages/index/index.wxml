@@ -7,5 +7,60 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <button type="primary" style="width:100%" bindtap="click" >点击我</button>
+  <!-- 
+     <button type="primary" style="width:100%" bindtap="click" >点击我</button>
+  -->
+  <!--算数运算 
+    <view>{{a + b}} + {{ c }} + d</view>
+  -->
+  <!--一次判断多个组件标签 用block标签将多个组件包装起来
+   <block wx:hidden="{{true}}">
+     <view wx:if="{{motto.length >10}}">motto长度大于10的时候显示</view>
+     <view wx:elif="{{motto.length > 6}}">motto长度大于6的时候显示</view>
+     <view wx:else>....</view>
+   </block>
+   -->
+  <!--
+     直接拼接数据 构成新的数组或者对象
+     <view wx:for="{{[a,9]}}">{{item}}</view> 
+  -->
+  <!--
+    for-item 给变量重新赋名    for-index下标变量名替换默认的index
+   <view wx:for="{{array}}" wx:for-item="arr" wx:for-index="idx">
+     {{idx}}: {{arr.message}}
+   </view>
+  -->
+  <!--
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+  </view>
+  -->
+  <!-- trouble
+  <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">                   {{item.id}}  
+   </switch>
+   <button bindtap="switch"> Switch </button>
+   <button bindtap="addToFront"> Add to the front </button>
+
+   <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;">
+       {{item}} 
+   </switch>
+   <button bindtap="addNumberToFront"> Add to the front </button>
+   -->
+   <!-- 
+   模板拥有自己的作用域，只能接受data传入的数据
+   name属性，作为模板的名字
+   <template name="msgItem">
+     <view>
+       <text style="display:block">{{index}}：{{msg}}</text>
+       <text>time:{{time}}</text>
+     </view>
+   </template>
+  使用is属性 申明所要使用的模板 将模板所需的data传入
+  <template is="msgItem" data="{{...item}}"></template>
+  -->
+ <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
 </view>
