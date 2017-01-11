@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/person/person"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,13 +16,18 @@
       "list":[{
         "pagePath":"pages/index/index",
         "text":"首页",
-        "iconPath":"../images/1.png",
-        "selectedIconPath":"../images/1-active.png"
+        "iconPath":"../images/home.png",
+        "selectedIconPath":"../images/home-active.png"
         },{
           "pagePath":"pages/logs/logs",
-          "text":"日志",
-          "iconPath":"../images/2.png",
-          "selectedIconPath":"../images/2-active.png"
+          "text":"收藏",
+          "iconPath":"../images/star.png",
+          "selectedIconPath":"../images/star-active.png"
+       },{
+          "pagePath":"pages/person/person",
+          "text":"个人中心",
+          "iconPath":"../images/person.png",
+          "selectedIconPath":"../images/person-active.png"
        }],
        "position":"bottom",
        "selectedColor":"blue",

@@ -4,3 +4,9 @@
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
 </view>
+<template name="msgItem">
+     <view>
+       <text style="display:block">{{index}}：{{msg}}</text>
+       <text>time:{{time}}</text>
+     </view>
+</template>

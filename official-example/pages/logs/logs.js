@@ -2,7 +2,7 @@
 var util = require('../../utils/util.js')
 Page({
   data: {
-    logs: []
+    logs: [],
   },
   onLoad: function () {
     this.setData({

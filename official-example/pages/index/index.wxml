@@ -4,9 +4,7 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
   <!-- 
      <button type="primary" style="width:100%" bindtap="click" >点击我</button>
   -->
@@ -62,5 +60,22 @@
   使用is属性 申明所要使用的模板 将模板所需的data传入
   <template is="msgItem" data="{{...item}}"></template>
   -->
- <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+  <!-- bind 事件绑定不会阻止事件冒泡 catch 事件绑定可以阻止冒泡向上冒泡 
+  在组件中定义数据 数据会通过事件传递给service 以data开头 以-连接多个字符
+  不能有大写
+  -->
+  <!-- 
+ <view bindtap="chooseimage">
+   <image src="{{imgs}}"></image>
+ </view>
+ -->
+<view bindtap="getlocation">获取坐标</view>
+<view bindtap="systeminfo">获取系统信息</view>
+<view bindtap="getnetwork">网络状态</view>
+<view bindtap="onaccelero">重力感应</view>
+<view bindtap="oncompass">罗盘</view>
+<view bindtap="callphone">拨打电话</view>
+<view bindtap="scancode">扫一扫</view>
+<view bindtap="checksession">检查状态</view>
+<view bindtap="wxpay">微信支付</view>
 </view>
