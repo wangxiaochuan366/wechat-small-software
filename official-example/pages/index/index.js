@@ -211,6 +211,7 @@ Page({
       }
     })
   }*/
+  
  /* scancode:function(){
      wx.scanCode({
        success: function (res){
